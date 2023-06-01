@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import Form from './Form';
+import Form from './form';
 
 describe('Form', () => {
   test('renders form with input field and submit button', () => {
@@ -28,16 +28,16 @@ describe('Form', () => {
   });
 
   test('handles form submission when input value is provided', () => {
-    jest.spyOn(window, 'alert').mockImplementation(() => {});
+    jest.spyOn(window, 'alert').mockImplementation(() => { });
     render(<Form />);
     const inputValue = 'Test';
-  
+
     const input = screen.getByLabelText('Input Field') as HTMLInputElement;
     fireEvent.change(input, { target: { value: inputValue } });
-  
+
     const submitButton = screen.getByRole('button', { name: 'Submit' });
     fireEvent.click(submitButton);
-  
+
     expect(window.alert).toHaveBeenCalledWith(`Form submitted with value: ${inputValue}`);
     expect(input.value).toBe('');
   });
