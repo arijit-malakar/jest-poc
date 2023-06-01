@@ -1,5 +1,4 @@
 import { render, screen, fireEvent } from '@testing-library/react'
-import { logRoles } from '@testing-library/dom'
 import ColorButtonPage from './color-button'
 
 describe('ColorButtonPage', () => {
@@ -19,10 +18,5 @@ describe('ColorButtonPage', () => {
     fireEvent.click(button)
     expect(button).toHaveStyle({ backgroundColor: 'Crimson' })
     expect(button).toHaveTextContent('Change to Midnight Blue')
-  })
-
-  test('log roles of this page', () => {
-    const { container } = render(<ColorButtonPage />)
-    // logRoles(container)
   })
 })

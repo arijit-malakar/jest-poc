@@ -24,7 +24,7 @@ describe('Form', () => {
     fireEvent.change(input, { target: { value: 'Test' } });
     fireEvent.click(screen.getByRole('button', { name: 'Submit' }));
 
-    expect(screen.queryByText('Please enter a value')).toBeNull();
+    expect(screen.queryByText('Please enter a value')).not.toBeInTheDocument();
   });
 
   test('handles form submission when input value is provided', () => {

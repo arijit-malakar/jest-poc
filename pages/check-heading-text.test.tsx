@@ -8,5 +8,5 @@ describe('CheckHeadingText', () => {
     expect(headingElement).toBeInTheDocument();
   })
 
-  it('do nothing', () => {})
+  it('do nothing', () => { })
 })
