@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+body {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Inter', 'SF Pro',
+    'San Francisco Pro', 'Helvetica Neue', Helvetica, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', sans-serif;
+
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,253,162,1) 100%);
+}
+
+header,
+footer {
+  padding: 0.5rem 1rem;
+}
+
+main {
+  padding: 1rem;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+textarea,
+button,
+select,
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+  font-size: 1rem;
+  outline: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background: #000;
+}
+
+
+.tabs-btn a{
+  padding: 0.5rem 1.5rem;
+    border: 2px solid #543b3b;
+    margin: 10px 20px;
+    display: block;
+    border-radius: 7px;
+    color: #000;
+    font-weight: 600;
+}
+.tabs-btn a:hover {
+  color: #525456;
+}
+
+header a{
+  display: block;
+}
+
+header .home {
+  font-size: 24px;
+  color: #000;
+  font-weight: 500;
+}
