@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import CheckboxButton from './checkbox-button';
+import CheckboxButton from '../pages/checkbox-button';
 
 describe('CheckboxButton', () => {
   test('when checkbox is checked, button should be disabled', () => {

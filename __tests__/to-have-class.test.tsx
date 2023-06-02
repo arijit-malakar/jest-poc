@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import ToHaveClass from './to-have-class'
+import ToHaveClass from '../pages/to-have-class'
 
 describe('ToHaveClass', () => {
   test('div should have class hidden', () => {

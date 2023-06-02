@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react'
-import ColorButtonPage from './color-button'
+import ColorButtonPage from '../pages/color-button'
 
 describe('ColorButtonPage', () => {
   test('button should toggle between Crimson and MidnightBlue when clicked', () => {

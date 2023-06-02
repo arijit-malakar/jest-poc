@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import CheckHeadingText from './check-heading-text'
+import CheckHeadingText from '../pages/check-heading-text'
 
 describe('CheckHeadingText', () => {
   it('renders a heading with the text "Welcome to unit testing with Jest"', () => {

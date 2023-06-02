@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import CheckByTestId from './check-by-test-id'
+import CheckByTestId from '../pages/check-by-test-id'
 
 describe('CheckByTestId', () => {
   it('should render a div with some text', () => {

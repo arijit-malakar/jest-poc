@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import Header from './Header'
+import Header from '../components/Header'
 // import mockRouter from 'next-router-mock'
 
 // mock the router for the Header component

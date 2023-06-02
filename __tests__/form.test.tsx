@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import Form from './form';
+import Form from '../pages/form';
 
 describe('Form', () => {
   test('renders form with input field and submit button', () => {
