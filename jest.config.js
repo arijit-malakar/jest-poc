@@ -7,6 +7,8 @@ const createJestConfig = nextJest({
 const customJestConfig = {
   setupFilesAfterEnv: ["<rootDir>/setupTests.js"],
   testEnvironment: "jest-environment-jsdom",
+  coverageReporters: ["html"],
+  coverageDirectory: "./coverage",
 };
 
 module.exports = createJestConfig(customJestConfig);
